@@ -10,3 +10,4 @@ class Athlete_Post(models.Model):
     video = models.FileField(upload_to='videos/', blank=True, null=True)
     image = models.ImageField(upload_to='images/', blank=True, null=True)
     content = models.TextField(blank=True, null=True)
+    premium = models.BooleanField(default=False)
